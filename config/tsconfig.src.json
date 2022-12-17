@@ -8,6 +8,7 @@
         "inlineSources": true,
 
         "baseUrl": "../src",
+        "jsx": "react-jsx",
 
         "importsNotUsedAsValues": "preserve",
         "isolatedModules": true
