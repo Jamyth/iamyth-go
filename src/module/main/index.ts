@@ -1,12 +1,18 @@
 import { Module, register } from "react-shiba";
 import { Main } from "./Main";
+import { Go } from "core/Go";
 import type { State, Path } from "./type";
 
-const initialState: State = {};
+const initialState: State = {
+    game: null,
+};
 
 class MainModule extends Module<Path, State> {
     override onEnter() {
         // TODO
+        this.setState({
+            game: new Go(),
+        });
     }
 }
 
