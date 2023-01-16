@@ -1,0 +1,8 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "target": "ES5",
+        "noEmit": true
+    },
+    "include": ["../src", "../test"]
+}

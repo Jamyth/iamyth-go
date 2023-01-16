@@ -7,15 +7,18 @@
         "format": "yarn run-script script/format.ts",
         "start": "yarn run-script script/start.ts",
         "build": "yarn run-script script/build.ts",
-        "module": "yarn run-script script/module.ts"
+        "module": "yarn run-script script/module.ts",
+        "test": "mocha --require ts-node/register --project config/tsconfig.test.json test/**/*.test.ts "
     },
     "devDependencies": {
         "@iamyth/devtool-utils": "1.0.1",
         "@iamyth/prettier-config": "0.0.2",
+        "@types/mocha": "10.0.1",
         "@types/node": "18.11.15",
         "@types/react": "18.0.26",
         "@types/react-dom": "18.0.9",
         "eslint-config-iamyth": "0.0.10",
+        "mocha": "10.2.0",
         "prettier": "2.8.1",
         "ts-node": "10.9.1",
         "typescript": "4.9.4",
